@@ -6,7 +6,7 @@
 
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
+    if ($(".navbar").offset().top > 1000) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -22,7 +22,7 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1000, 'easeInOutExpo');
+        }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
